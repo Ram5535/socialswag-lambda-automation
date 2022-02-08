@@ -1,0 +1,1 @@
+# socialswag-lambda-automation
