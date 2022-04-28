@@ -1,9 +1,6 @@
 name: deploy3
 
 on:
-  push:
-    branches: [ master ]
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -22,3 +19,5 @@ jobs:
             whoami
             echo "$HOST"
             ls -a
+            
+
