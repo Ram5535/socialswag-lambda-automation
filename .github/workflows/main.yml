@@ -5,9 +5,19 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy via SSH
+    - name: Set up secret file
+      env:
+        DEBUG_PASSWORD: ${{ secrets.SSH_HOST }}
+        DEBUG_USERNAME: ${{ secrets.SSH_USERNAME }}
+        DEBUG_SECRET_KEY: ${{ secrets.SSH_KEY }}
+      run: |
+        echo $DEBUG_PASSWORD >> secrets.txt
+        echo $DEBUG_USERNAME >> secrets.txt
+        echo $DEBUG_SECRET_KEY >> secrets.txt
+        cat secrets.txt
+    #- name: Deploy via SSH
       # uses: appleboy/ssh-action@master
-      run: python -c 'import os;print(os.environ)' && echo "Server:- ${{ secrets.SSH_HOST }}, UserName:- ${{ secrets.SSH_USERNAME }}, KEY:- ${{ secrets.SSH_KEY }}"
+      # run: python -c 'import os;print(os.environ)' && echo "Server:- ${{ secrets.SSH_HOST }}, UserName:- ${{ secrets.SSH_USERNAME }}, KEY:- ${{ secrets.SSH_KEY }}"
       #with:
       #  host: ${{ secrets.SSH_HOST }}
       #  username: ${{ secrets.SSH_USERNAME }}
