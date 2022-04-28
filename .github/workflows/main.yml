@@ -7,10 +7,14 @@ jobs:
     steps:
     - name: Deploy via SSH
       uses: appleboy/ssh-action@master
+      echo " : appleboy/ssh-action@master"
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
           # git update to latest codebase on main branch
-          cd /opt/socialswag-lambda-automation && git pull
+          cd /opt/socialswag-lambda-automation 
+          script: whoami
+          
+      
