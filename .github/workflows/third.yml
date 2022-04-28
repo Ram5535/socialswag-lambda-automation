@@ -1,4 +1,4 @@
-- name: executing remote ssh commands using ssh key
+name: executing remote ssh commands using ssh key
   uses: appleboy/ssh-action@master
   with:
     host: ${{ secrets.HOST }}
