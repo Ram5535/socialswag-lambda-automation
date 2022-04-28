@@ -1,1 +1,1 @@
-# socialswag-lambda-automation
+# socialswag-lambda-auto
