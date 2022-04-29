@@ -15,3 +15,6 @@ jobs:
         user: ${{ secrets.SSH_USERNAME_151 }}
         key: ${{ secrets.SSH_PVTKEY_151 }}
         port: ${{ secrets.SSH_PORT_151 }}
+        
+        
+        git actions is working
