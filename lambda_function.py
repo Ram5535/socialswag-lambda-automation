@@ -10,4 +10,6 @@ def lambda_handler(event, context):
     
     in gitaction
     
-    it working
+    it working. 
+    
+    the git actions is working
