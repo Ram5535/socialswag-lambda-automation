@@ -3,3 +3,5 @@ pandas==1.4.0
 apt install nginx
 
 systemctl status nginx
+
+systemctl status nginx1
