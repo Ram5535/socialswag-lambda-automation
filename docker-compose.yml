@@ -1,0 +1,12 @@
+version: '3'
+services:
+  camunda:
+     image: camunda/camunda-bpm-platform:latest
+     container_name: camunda
+     environment:
+       - DB_USERNAME=bpclccc
+       - DB_PASSWORD=LinSuKu#560040
+     ports:
+       - 8081:8081
+     volumes:
+       - /Users/hash/Documents/camunda/camunda/webapp/:/camunda/webapp/
