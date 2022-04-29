@@ -13,4 +13,4 @@ jobs:
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
         port: 22
-        script: cd socialswag-lambda-automation && git pull
+        script: cd /opt/socialswag-lambda-automation && git pull
