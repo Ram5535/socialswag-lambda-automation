@@ -9,10 +9,10 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-        host: 3.109.180.151
-        username: ubuntu
-        password: admin@123
-        port: 22
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
         script: |
           cd /opt/socialswag-lambda-automation/
-          echo admin@123 | sudo -S git pull https://github.com/Ram5535/socialswag-lambda-automation.git
+          echo ${{ secrets.PASSWORD }} | sudo -S git pull https://github.com/Ram5535/socialswag-lambda-automation.git
