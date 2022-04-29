@@ -18,7 +18,8 @@ phases:
       - echo "Updating lambda Function..."
       - aws lambda update-function-code --function-name socialswag-lambda-automation --zip-file fileb://deployment_package.zip
       - echo "DONE!!"
-
+   
+        it is working
 
 
 
