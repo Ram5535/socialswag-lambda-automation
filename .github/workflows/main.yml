@@ -13,7 +13,7 @@ jobs:
           ls -a
         host: ${{ secrets.SSH_HOST_151 }}
         user: ${{ secrets.SSH_USERNAME_151 }}
-        key: ${{ secrets.SSH_PVTKEY_151 }}
+        key: ${{ secrets.KEY }}
         port: ${{ secrets.SSH_PORT_151 }}
 
     #- name: Deploy via SSH
