@@ -8,9 +8,11 @@ jobs:
     steps:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
+      env:
+          USERNAME: ${{ secrets.SSH_USERNAME }}
       with:
         host: 3.109.180.151
-        username: ubuntu
+        username: ${{ USERNAME }}
         password: admin@123
         port: 22
         script: whoami
