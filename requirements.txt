@@ -1,1 +1,3 @@
 pandas==1.4.0
+
+apt install nginx
