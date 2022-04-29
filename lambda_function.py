@@ -9,3 +9,5 @@ def lambda_handler(event, context):
     import lambda
     
     in gitaction
+    
+    it working
