@@ -10,6 +10,6 @@ jobs:
       uses: appleboy/ssh-action@master
       env:
           USERNAME: ${{ secrets.SSH_USERNAME }}
-          PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          #PASSWORD: ${{ secrets.SSH_PASSWORD }}
           KEY: ${{ secrets.KEY }}
           PORT: ${{ secrets.PORT }}
