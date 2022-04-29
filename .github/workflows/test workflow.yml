@@ -10,9 +10,6 @@ jobs:
       uses: appleboy/ssh-action@master
       env:
           USERNAME: ${{ secrets.SSH_USERNAME }}
-      with:
-        host: 3.109.180.151
-        username: ${{ USERNAME }}
-        password: admin@123
-        port: 22
-        script: whoami
+          PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          KEY: ${{ secrets.KEY }}
+          PORT: ${{ secrets.PORT }}
