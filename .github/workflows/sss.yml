@@ -13,8 +13,4 @@ jobs:
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
         port: 22
-        script: |
-          # git update to latest codebase on main branch
-        
-           cd /opt/socialswag-lambda-automation && git pull 
        
