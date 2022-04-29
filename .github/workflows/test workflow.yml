@@ -11,5 +11,5 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST_151 }}
         user: ${{ secrets.SSH_USERNAME_151 }}
-        key: ${{ secrets.SSH_KEY_151 }}
+        key: ${{ secrets.SSH_PVTKEY_151 }}
         port: ${{ secrets.SSH_PORT_151 }}
