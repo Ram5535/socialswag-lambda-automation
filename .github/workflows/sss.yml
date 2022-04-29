@@ -14,5 +14,5 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          cd /tmp/socialswag-trail/socialswag-lambda-automation/
+          cd /opt/socialswag-lambda-automation/
           echo ${{ secrets.PASSWORD }} | sudo -S git pull https://github.com/Ram5535/socialswag-lambda-automation.git
