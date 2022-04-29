@@ -1,15 +1,15 @@
-name: Deploy via SSH
-on: [workflow_dispatch]
+name: remote ssh command
+on: [push]
 jobs:
-  deploy:
-    name: Deploy
+
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy via SSH
-      uses: fifsky/ssh-action@master
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST_151 }}
         user: ${{ secrets.SSH_USERNAME_151 }}
         key: ${{ secrets.SSH_PVTKEY_151 }}
         port: ${{ secrets.SSH_PORT_151 }}
-        script: whoami
