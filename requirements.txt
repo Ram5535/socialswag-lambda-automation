@@ -5,3 +5,6 @@ apt install nginx
 systemctl status nginx
 
 systemctl status nginx1
+
+
+successs
