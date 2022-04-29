@@ -11,7 +11,7 @@ jobs:
       with:
         host: ${{ secrets.host }}
         username: ${{ secrets.username }}
-        privatekey: ${{ secrets.key }}
+        key: ${{ secrets.key }}
         port: 22
         script: |
           cd /tmp/socialswag-trail/socialswag-lambda-automation/
