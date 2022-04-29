@@ -11,10 +11,10 @@ jobs:
         command: |
           cd /tmp
           ls -a
-        host: ${{ secrets.SSH_HOST }}
-        user: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        port: ${{ secrets.SSH_PORT }}
+        host: ${{ secrets.SSH_HOST_151 }}
+        user: ${{ secrets.SSH_USERNAME_151 }}
+        key: ${{ secrets.SSH_KEY_151 }}
+        port: ${{ secrets.SSH_PORT_151 }}
 
     #- name: Deploy via SSH
       # uses: appleboy/ssh-action@master
