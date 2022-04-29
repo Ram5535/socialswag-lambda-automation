@@ -27,5 +27,3 @@ jobs:
       #    # git update to latest codebase on main branch
       #    cd /opt/socialswag-lambda-automation 
       #    script: whoami
-          
-      
