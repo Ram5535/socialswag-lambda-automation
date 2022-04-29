@@ -11,8 +11,8 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
+        privatkey: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
           cd /tmp/socialswag-trail/socialswag-lambda-automation/
-          echo ${{ secrets.PASSWORD }} | sudo -S git pull https://github.com/Ram5535/socialswag-lambda-automation.git
+          sudo -S git pull https://github.com/Ram5535/socialswag-lambda-automation.git
